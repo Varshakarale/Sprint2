@@ -1,0 +1,28 @@
+<h2> Employee List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> reason </th>
+            <th> startDate </th>
+            <th> endDate </th>
+            <th> id </th>
+           
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let leave of leaves">
+            <td> {{ leave.reason }} </td>
+            <td> {{ leave.startDate }} </td>
+            <td> {{ leave.endDate }} </td>
+            <td> {{ leave.id }} </td>
+           
+           
+            <td>
+                <button (click) = "updateLeave(leave.id)" class= "btn btn-info"> Update</button>
+            </td>
+
+
+        </tr>
+    </tbody>
+</table>

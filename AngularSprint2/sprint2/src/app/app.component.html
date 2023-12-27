@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+        <li class="nav-item"> 
+            <a routerLink="employee-login" routerLinkActive="active" class="nav-link" >Login Employee</a>
+        </li>
+        <li class="nav-item"> 
+            <a routerLink="employees" routerLinkActive="active" class="nav-link" >Employee List</a>
+        </li>
+        <li class="nav-item"> 
+            <a routerLink="create-employee" routerLinkActive="active" class="nav-link" >Add Employee</a>
+        </li>
+        <li class="nav-item"> 
+            <a routerLink="departments" routerLinkActive="active" class="nav-link" >Department list</a>
+        </li>
+        <li class="nav-item"> 
+            <a routerLink="create-department" routerLinkActive="active" class="nav-link" >Department </a>
+        </li>
+        <li class="nav-item"> 
+            <a routerLink="leaves" routerLinkActive="active" class="nav-link" >leave list</a>
+        </li>
+        <li class="nav-item"> 
+            <a routerLink="leaves" routerLinkActive="active" class="nav-link" >leave </a>
+        </li>
+        <li class="nav-item"> 
+            <a routerLink="Manager" routerLinkActive="active" class="nav-link" >Manager list</a>
+        </li>
+        <li class="nav-item"> 
+            <a routerLink="Manager" routerLinkActive="active" class="nav-link" >Manager </a>
+        </li>
+        <li class="nav-item"> 
+            <a routerLink="Salary" routerLinkActive="active" class="nav-link" >Salary list</a>
+        </li>
+        <li class="nav-item"> 
+            <a routerLink="Salary" routerLinkActive="active" class="nav-link" >Salary </a>
+        </li>
+
+    </ul>
+
+</nav>
+<h1 class="text-center"> {{title}} </h1>
+<div class = "container">
+<router-outlet></router-outlet>
+</div>
+<footer class="footer">
+    <div class="container">
+        <span>All Rights Reserved 2023 @VarshaKarale</span>
+    </div>
+
+</footer>
